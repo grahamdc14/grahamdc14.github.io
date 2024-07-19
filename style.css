@@ -226,6 +226,19 @@ body {
         object-fit: cover;
     }
 
+    .nav{
+        display: block;
+        position: absolute;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
     .nav a {
         display: block;
         color: #faebd7;
@@ -238,20 +251,6 @@ body {
 
     .header .fa-solid {
         display: block;
-    }
-
-    .nav{
-        display: block;
-        position: absolute;
-        background: #333;
-        color: #faebd7;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
     }
 
     .nav .fa-solid {
