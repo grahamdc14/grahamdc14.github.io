@@ -245,11 +245,10 @@ body {
         background: #333;
     }
 
-    .nav a.active,
-    .nav a:hover {
+    .nav a.active {
         color: #faebd7;
         background: linear-gradient( #333, #333);
-    }
+    } 
 
     .header .fa-solid {
         display: block;
