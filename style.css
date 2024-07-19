@@ -247,6 +247,7 @@ body {
 
     .nav a.active,
     .nav a:hover {
+        color: #faebd7;
         background: linear-gradient( #333, #333);
     }
 
