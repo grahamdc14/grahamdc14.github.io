@@ -239,12 +239,6 @@ body {
         transition: 1s;
     }
 
-    .nav a {
-        display: block;
-        background: #333;
-        color: #faebd7;
-    }
-
     .header .fa-solid {
         display: block;
     }
