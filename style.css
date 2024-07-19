@@ -241,14 +241,9 @@ body {
 
     .nav a {
         display: block;
-        color: #faebd7;
         background: #333;
-    }
-
-    .nav a.active {
         color: #faebd7;
-        background: linear-gradient( #333, #333);
-    } 
+    }
 
     .header .fa-solid {
         display: block;
