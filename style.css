@@ -233,7 +233,7 @@ body {
 
     .nav a.active,
     .nav a:hover {
-        background: linear-gradient( #faebd7, #faebd7);
+        background: linear-gradient( #333, #333);
     }
 
     .header .fa-solid {
