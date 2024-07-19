@@ -17,13 +17,15 @@
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
 
-        <nav class="nav">
+        <nav class="nav" id="navLinks">
+            <i class="fa-solid fa-xmark" onClick="hideMenu()"></i>
             <a href="#" style='--i:1;' class="active">Home</a>
             <a href="#" style='--i:2;'>About</a>
             <a href="#" style='--i:3;'>Skills</a>
             <a href="#" style='--i:4;'>Portfolio</a>
             <a href="#" style='--i:5;'>Contact</a>
         </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </header>
 
     <section class="home">
@@ -47,5 +49,18 @@
     </section>
 </body>
 
+<!-- Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+
+</script>
 
 </html>
