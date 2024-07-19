@@ -247,6 +247,7 @@ body {
     .nav a.active,
     .nav a:hover {
         background: linear-gradient( #333, #333);
+        color: #faebd7;
     }
 
     .header .fa-solid {
