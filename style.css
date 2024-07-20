@@ -184,7 +184,7 @@ body {
 /* ABOUT ME */
 
 .about-me {
-    width: 100%;
+    width: 70%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -213,10 +213,20 @@ body {
     animation-delay: .5s;
 }
 
+.edu-arrow-container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    z-index: 1;
+}
+
 
 /* EDUCATION */
 .education {
     width: 100%;
+    height: 100vh;
     margin: auto;
     text-align: left;
     display: flex;
@@ -310,8 +320,233 @@ body {
     opacity: 50%;
 }
 
-/* EXPERIENCE */
+/* PORTFOLIO */
 
+/* Experience */
+.work-exp {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+    background: #faebd7;
+}
+
+.work-exp-content {
+    width: 80%;
+}
+
+.work-exp-content h1 {
+    font-size: 48px;
+    font-weight: 700px;
+    line-height: 1.2;
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.date {
+    font-weight: bold;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.details {
+    width: 75%;
+}
+
+.details h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.details ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    padding-top: 10px;
+}
+
+.proj-arrow-container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* Projects */
+.projects {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: left;
+    padding: 200px 10% 0;
+    background: #c8bcac;
+    align-items: center;
+}
+
+.projects-content h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-col {
+    flex-basis: 42%;
+    border-radius: 10px; 
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-col:hover {
+    box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.project-col img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #333;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 36px;
+    bottom: 39%;
+    text-align: center;
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 55%;
+    opacity: 1;
+}
+
+.layer p {
+    width: 80%;
+    font-weight: 500;
+    bottom: 0;
+    left: 10%;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p {
+    top: 55%;
+    opacity: 1;
+    animation: slideTop .5s ease forwards;
+}
+
+/* AGA */
+.aga {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 10% 0;
+    background: #faebd7;
+}
+
+.aga-content h1 {
+    font-size: 36px;
+}
+
+.aga-content span {
+    font-size: 28px;
+}
+
+.aga-content p {
+    padding-top: 10px;
+}
+
+.img-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MQP */
+.mqp {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 10% 0;
+    background: #faebd7;
+}
+
+.mqp-content h1 {
+    font-size: 36px;
+}
+
+.mqp-content span {
+    font-size: 28px;
+}
+
+.mqp-content p {
+    padding-top: 10px;
+}
 
 /* MEDIA COMPATABLE */
 @media(max-width: 700px){
