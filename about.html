@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graham's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee825d93cf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="nav" id="navLinks">
+            <i class="fa-solid fa-xmark" onClick="hideMenu()"></i>
+            <a href="index.html" style='--i:1;'>Home</a>
+            <a href="#" style='--i:2;' class="active">About</a>
+            <a href="skills.html" style='--i:3;'>Skills</a>
+            <a href="portfolio.html" style='--i:4;'>Portfolio</a>
+            <a href="contact.html" style='--i:5;'>Contact</a>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </header>
+
+    <section class="about-me">
+        <div class="about-me-content">
+            <h1>About me</h1>
+            <p>Esse fugiat velit nostrud magna. Dolor aute reprehenderit tempor cupidatat occaecat ad cupidatat velit ea. Pariatur velit nisi anim ea eiusmod. Ipsum pariatur excepteur est sit fugiat minim laborum ad veniam esse ipsum et. Adipisicing minim velit qui cupidatat. Cupidatat ex labore consequat excepteur nostrud pariatur. Velit consequat tempor elit anim dolore voluptate do ipsum qui laboris tempor eiusmod quis.</p>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education">
+        <div class="education-content">
+            <h1>Education</h1>
+            <h3>Worcester Polytechnic Institute</h3>
+            <div class="education-item">
+                <div class="date">December 2024</div>
+                <div class="details">
+                    <h4>Master's in Aerospace Engineering</h4>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="date">May 2024</div>
+                <div class="details">
+                    <h4>Bachelor's in Aerospace Engineering</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-img">
+            <div class="wpi-logo">
+                <img src="images/wpi-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<!-- Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+
+</script>
+</html>
